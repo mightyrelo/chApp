@@ -7,8 +7,7 @@ class List {
 
     //mututators - append, remove, insert, clear
     append(element){
-        this.dataStore[this.listSize] = element;
-        ++this.listSize;
+        this.dataStore[this.listSize++] = element;
     }
     remove(element){
         let elPos = this.find(element);
@@ -77,7 +76,7 @@ class List {
         return this.positionPtr;
     }
     getElement(){
-        this.dataStore[this.positionPtr];
+        return this.dataStore[this.positionPtr];
     }
     contains(element){
         if(this.find(element) > -1){
