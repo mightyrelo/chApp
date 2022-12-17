@@ -43,19 +43,5 @@ class FileUser {
     }
 } 
 
-
-const list = new List();
-list.append('Hello');
-list.append('My');
-list.append('name');
-list.append('is');
-list.append('Katlego');
-list.append('');
-
-let fu = new FileUser();
-fu.writeToFile('Items.txt', list);
-
-
-
 module.exports = FileUser;
 
