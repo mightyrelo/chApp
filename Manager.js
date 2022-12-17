@@ -31,6 +31,12 @@ class Manager{
                         console.log('checkout success!')
                         readline.close();
                     })
+                } else if(check == 'in'){
+                    readline.question('what are you checking in? ', item => {
+                        this.doProcessUserInput(name, check, item);
+                        console.log('checkin success!')
+                        readline.close();
+                    })
                 }
             }) 
         })
@@ -39,18 +45,24 @@ class Manager{
         if(out == 'out'){
             this.checkout(name, item);
         } else {
-            this.checkin()
+            this.checkin(name, item);
         }
         console.log('After transaction: \n');
         this.displayList(this.items);
         console.log('\nUser rentails: \n');
         this.displayList(this.users);
-
-        this.fileUser.writeToFile('Items.txt', this.items);
-        //this.fileUser.writeToFile('Users.txt', this.users);
     }
 
-    checkin(){ }
+    checkin(name, item){
+        
+        if(!this.items.contains(name)){
+            console.log('greet folks', item);
+            let newUser = new User(name, item);
+            this.items.append(item);
+            this.fileUser.writeToFile('Items.txt', this.items);
+            this.users.append(newUser);
+        } else {console.log('item already exists')}
+     }
 
     checkout(name, item){
         if(this.items.contains(item)){

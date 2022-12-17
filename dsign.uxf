@@ -1,0 +1,15 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>160</x><y>390</y><w>140</w><h>70</h></coordinates><panel_attributes>Items
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>340</x><y>390</y><w>140</w><h>70</h></coordinates><panel_attributes>FileUser
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>130</x><y>240</y><w>420</w><h>250</h></coordinates><panel_attributes>Manager
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>150</x><y>290</y><w>140</w><h>70</h></coordinates><panel_attributes>Users
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>80</x><y>190</y><w>500</w><h>370</h></coordinates><panel_attributes>chApp
+--
+bg=black</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>670</x><y>390</y><w>140</w><h>70</h></coordinates><panel_attributes>File
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>140</x><y>600</y><w>140</w><h>70</h></coordinates><panel_attributes>Keyboard
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element></diagram>
